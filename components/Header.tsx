@@ -1,5 +1,5 @@
 "use client";
-import Link from "react-scroll/modules/components/Link";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
