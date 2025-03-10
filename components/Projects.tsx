@@ -1,87 +1,162 @@
-import { FaReact, FaNodeJs, FaPython, FaAngular, FaGithub, FaJsSquare } from "react-icons/fa";
+"use client";
+import { useState } from "react";
+import { FaNodeJs, FaReact, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare,  FaJava, FaAngular, FaPython, FaGit, FaAws, FaJira, FaConfluence, FaDocker, FaUnity} from 'react-icons/fa';
+import { TbBrandCpp, TbBrandTypescript, TbBrandTailwind, TbBrandMongodb, TbBrandNextjs, TbBrandCSharp} from "react-icons/tb";
+import { SiApachekafka, SiPostman, SiSpring, SiJasmine, SiJunit5, SiTeamcity} from "react-icons/si";
+
 
 const Projects = () => {
-  const projectData = [
-    {
-      title: "CookGenie",
-      description: "An app that generates recipes based on ingredients you have, using AI to suggest creative dishes.",
-      youtubeLink: "qA28xOPP67s",
-      techStack: [
-              { name: "D3.js", icon: <FaGithub size={30} /> , style:"text-red-700"}, // D3.js icon can be custom or use GitHub logo
-              { name: "React", icon: <FaReact size={30} /> , style:"text-blue-700"},
-              { name: "Node.js", icon: <FaNodeJs size={30} /> , style:"text-blue-700"},
-            ],
-    },
-    {
-      title: "Music Evolution",
-      description: "An interactive tool that visualizes the evolution of music genres over 60 years, based on song data and trends.",
-      youtubeLink: "j_qiVUbDAOM",
-      techStack: [
-                    { name: "D3.js", icon: <FaGithub size={30} /> , style:"text-blue-700"}, // D3.js icon can be custom or use GitHub logo
-                    { name: "React", icon: <FaReact size={30} />, style:"text-blue-700" },
-                    { name: "Node.js", icon: <FaNodeJs size={30} /> , style:"text-blue-700"},
-                  ],
-    },
-    {
-      title: "Trader App",
-      description: "A trading application for Citi used by thousands of traders to reconcile transactions and track market trends.",
-      youtubeLink: "ZwNteUswkT0",
-      techStack: [
-                    { name: "D3.js", icon: <FaGithub size={30} /> , style:"text-blue-700"}, // D3.js icon can be custom or use GitHub logo
-                    { name: "React", icon: <FaReact size={30} /> , style:"text-blue-700"},
-                    { name: "Node.js", icon: <FaNodeJs size={30} /> , style:"text-green-700"},
-                  ],
-    },
-    {
-          title: "Trader App",
-          description: "A trading application for Citi used by thousands of traders to reconcile transactions and track market trends.",
-          youtubeLink: "_rmlOdjbSKg",
-          techStack: [
-                        { name: "D3.js", icon: <FaGithub size={30} /> , style:"text-blue-700"}, // D3.js icon can be custom or use GitHub logo
-                        { name: "React", icon: <FaReact size={30} /> , style:"text-blue-700"},
-                        { name: "Node.js", icon: <FaNodeJs size={30} />, style:"text-blue-700" },
-                      ],
-    }
-  ];
+const projectData = [
+{
+title: "Music Historical Analysis",
+description: "Designed and developed an intuitive user interface that facilitated in-depth music historical analysis spanning over 60 years, enabling users to explore the evolution of music genres and the impact of various features on song popularity.",
+youtubeLink: "j_qiVUbDAOM",
+techStack: [
+{ name: "React", icon:
+<FaReact size={30}/>, style: "text-blue-500" },
+{ name: "HTML", icon:
+<FaHtml5 size={30}/>, style: "text-orange-500" },
+{ name: "CSS", icon:
+<FaCss3Alt size={30}/>, style: "text-blue-600" },
+{ name: "Python", icon:
+<FaPython size={30}/>, style: "text-gray-700" },
+{ name: "MongoDB", icon:
+<TbBrandMongodb size={30}/>, style: "text-green-600" },
+{ name: "Docker", icon:
+<FaDocker size={30}/>, style: "text-blue-600" },
+{ name: "Git", icon:
+<FaGit size={30}/>, style: "text-orange-400" },
+],
+},
+{
+title: "Fitness Tracker",
+description: "Developed a fitness tracker application with a user-friendly interface for goal tracking, workout and nutrition logging, and dynamic progress charts.",
+youtubeLink: "ZwNteUswkT0",
+techStack: [
+{ name: "React", icon:
+<FaReact size={30}/>, style: "text-blue-500" },
+{ name: "HTML", icon:
+<FaHtml5 size={30}/>, style: "text-orange-500" },
+{ name: "CSS", icon:
+<FaCss3Alt size={30}/>, style: "text-blue-600" },
+{ name: "Python", icon:
+<FaPython size={30}/>, style: "text-gray-700" },
+{ name: "MongoDB", icon:
+<TbBrandMongodb size={30}/>, style: "text-green-600" },
+{ name: "Kafka", icon:
+<SiApachekafka size={30}/>, style: "text-gray-500" },
+{ name: "Git", icon:
+<FaGit size={30}/>, style: "text-orange-400" },
+],
+},
+{
+title: "On-Premise Encryption Key Management Integration with AWS, S3",
+description: "Collaborated with IBM to develop a middleware that integrates IBM’s key management server with AWS using REST APIs to provide interoperability between them, enabling the organization restrictive and authentic access to data.",
+youtubeLink: "_rmlOdjbSKg",
+techStack: [
+{ name: "Java", icon:
+<FaJava size={30}/>, style: "text-orange-400" },
+{ name: "Angular", icon:
+<FaAngular size={30}/>, style: "text-red-400" },
+{ name: "HTML", icon:
+<FaHtml5 size={30}/>, style: "text-orange-500" },
+{ name: "CSS", icon:
+<FaCss3Alt size={30}/>, style: "text-blue-600" },
+{ name: "AWS", icon:
+<FaAws size={30}/>, style: "text-yellow-400" },
+{ name: "SQL", icon:
+<FaDatabase size={30}/>, style: "text-yellow-500" },
+{ name: "Jasmine/Karma", icon:
+<SiJasmine size={30}/>, style: "text-purple-700" },
+{ name: "Mockito", icon:
+<SiSpring size={30}/>, style: "text-green-500" },
+{ name: "Postman", icon:
+<SiPostman size={30}/>, style: "text-orange-400" },
+],
+},
+{
+title: "Transcatheter Mitral Valve Placement Training Simulator",
+description: "Engineered and implemented a realistic and interactive simulation module that replicates the process of transcatheter mitral valve placement, in collaboration with Medtronic. This module offers interventional cardiologists a risk-free environment to refine their skills.",
+youtubeLink: "qA28xOPP67s",
+techStack: [
+{ name: "Unity", icon:
+<FaUnity size={30}/>, style: "text-gray-700" },
+{ name: "C#", icon:
+<TbBrandCSharp size={30}/>, style: "text-blue-700" },
+{ name: "Jira", icon:
+<FaJira size={30}/>, style: "text-blue-600" },
+{ name: "Git", icon:
+<FaGit size={30}/>, style: "text-orange-400" },
+],
+},
+];
 
-  return (
-    <section id="projects" className="py-20 bg-gray-100">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-12">Projects</h2>
-        <div className="grid grid-cols-2 gap-10">
-          {projectData.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
+// State to track the current project index
+const [currentIndex, setCurrentIndex] = useState(0);
+
+// Function to navigate to the next project (circular navigation)
+const goToNextProject = () => {
+setCurrentIndex((prevIndex) => (prevIndex + 1) % projectData.length);
+};
+
+// Function to navigate to the previous project (circular navigation)
+const goToPrevProject = () => {
+setCurrentIndex(
+(prevIndex) => (prevIndex - 1 + projectData.length) % projectData.length
+);
+};
+
+const currentProject = projectData[currentIndex];
+
+return (
+<section id="projects" className="py-20 bg-gray-100">
+    <div className="container mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Projects</h2>
+        <div className="relative">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-3">{currentProject.title}</h3>
+                <p className="text-gray-800 mb-4 mr-30 ml-30">{currentProject.description}</p>
+
+                <div className="flex flex-wrap justify-center gap-6 m-6">
+                    {currentProject.techStack.map((tech, index) => (
+                    <div key={index} className="flex flex-col items-center text-center">
+                        <div className={`${tech.style} flex flex-col items-center`}>
+                            {tech.icon}
+                            <p className="font-semibold text-gray-600 mt-1">{tech.name}</p>
+                        </div>
+                    </div>
+                    ))}
+                </div>
 
 
-              <div className="flex flex-wrap justify-center gap-4 mt-4">
-
-                              {project.techStack.map((tech, index) => (
-                                <div key={index} className={tech.style}>
-                                  {tech.icon}
-                                  <p className="text-gray-700">{tech.name}</p>
-                                </div>
-                              ))}
-              </div>
-              <div className="relative pt-[56.25%]">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${project.youtubeLink}`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+                <div className="relative pt-[35%]">
+                    <iframe
+                            className="absolute top-0 right-35 w-4xl h-full"
+                            src={`https://www.youtube.com/embed/${currentProject.youtubeLink}`}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                    ></iframe>
+                </div>
             </div>
-          ))}
+
+            {/* Navigation Buttons */}
+            <button
+                    onClick={goToPrevProject}
+                    className="absolute left-20 top-1/2 transform -translate-y-1/2 p-4 bg-purple-500 text-white rounded-full"
+            >
+                &#8592; {/* Left arrow */}
+            </button>
+            <button
+                    onClick={goToNextProject}
+                    className="absolute right-20 top-1/2 transform -translate-y-1/2 p-4 bg-purple-500 text-white rounded-full"
+            >
+                &#8594; {/* Right arrow */}
+            </button>
         </div>
-      </div>
-    </section>
-  );
+    </div>
+</section>
+);
 };
 
 export default Projects;
