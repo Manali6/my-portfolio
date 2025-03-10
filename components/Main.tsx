@@ -47,7 +47,7 @@ const Main = () => {
               Hi, I am Manali Kale
           </h1>
           <p className="text-white text-2xl md:text-3xl mt-4 font-extrabold relative z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)] max-w-2xl">
-              Turning ideas into interactive web experiences as a Full Stack Developer.
+              Turning ideas into interactive web experiences as a Full Stack Developer
           </p>
       </section>
 
