@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaNodeJs, FaReact, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare,  FaJava, FaAngular, FaPython, FaGit, FaAws, FaJira, FaConfluence, FaDocker, FaUnity} from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaNodeJs, FaReact, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare,  FaJava, FaAngular, FaPython, FaGit, FaAws, FaJira, FaConfluence, FaDocker, FaUnity} from 'react-icons/fa';
 import { TbBrandCpp, TbBrandTypescript, TbBrandTailwind, TbBrandMongodb, TbBrandNextjs, TbBrandCSharp} from "react-icons/tb";
 import { SiApachekafka, SiPostman, SiSpring, SiJasmine, SiJunit5, SiTeamcity} from "react-icons/si";
 
@@ -140,19 +140,24 @@ return (
                 </div>
             </div>
 
-            {/* Navigation Buttons */}
+
+
             <button
                     onClick={goToPrevProject}
-                    className="absolute left-20 top-1/2 transform -translate-y-1/2 p-4 bg-purple-500 text-white rounded-full"
+                    className="absolute left-6 top-1/2 transform -translate-y-1/2 p-4 bg-purple-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform"
             >
-                &#8592; {/* Left arrow */}
+                <FaArrowLeft size={20} />
             </button>
+
             <button
                     onClick={goToNextProject}
-                    className="absolute right-20 top-1/2 transform -translate-y-1/2 p-4 bg-purple-500 text-white rounded-full"
+                    className="absolute right-6 top-1/2 transform -translate-y-1/2 p-4 bg-purple-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform"
             >
-                &#8594; {/* Right arrow */}
+                <FaArrowRight size={20} />
             </button>
+
+
+
         </div>
     </div>
 </section>
