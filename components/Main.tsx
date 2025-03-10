@@ -32,7 +32,7 @@ const Main = () => {
 
   // Update mouse position
   useEffect(() => {
-    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
