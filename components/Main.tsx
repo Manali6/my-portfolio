@@ -2,9 +2,17 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+interface Bubble {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+}
+
+
 const Main = () => {
   const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 });
-  const [bubbles, setBubbles] = useState([]);
+  const [bubbles, setBubbles] = useState<Bubble[]>([]);
 
   useEffect(() => {
     const generateBubbles = () => {
