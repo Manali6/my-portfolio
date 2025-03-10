@@ -44,10 +44,10 @@ const Main = () => {
       <section
               className="relative w-full h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-500 to-indigo-600 overflow-hidden text-center px-6">
           <h1 className="text-white text-6xl md:text-7xl font-extrabold relative z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
-              Hi, I am Manali Kale
+              Hi, I am Manali
           </h1>
-          <p className="text-white text-2xl md:text-3xl mt-4 font-extrabold relative z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)] max-w-2xl">
-              Turning ideas into interactive web experiences as a Full Stack Developer
+          <p className="text-white text-2xl md:text-3xl mt-6 font-extrabold relative z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)] max-w-2xl">
+              As a Full Stack Developer, I bring ideas to life through interactive web experiences
           </p>
       </section>
 
