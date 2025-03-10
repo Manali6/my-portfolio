@@ -9,7 +9,7 @@ const experienceData = [
   role: "Software Engineer Intern",
   duration: " August 2024 - Present",
   description: [
-  "Currently engaged in software development projects to support charitable initiatives. Focused on applying programming skills and collaborative teamwork."
+  "Currently, working on a software development project aimed at supporting charitable initiatives, leveraging my programming skills and fostering collaborative teamwork to drive impactful solutions."
   ],
 },
 {
@@ -17,7 +17,7 @@ const experienceData = [
   role: "Course Facilitator",
   duration: "June 2023 - May 2024",
   description: [
-  "Facilitated a course with a cohort of 150+ students. Managed various responsibilities, including communication through holding online office hours."
+  "Facilitated a course for over 150 students, managing various responsibilities such as organizing course materials, grading assignments, and providing individual support through online office hours, while fostering an engaging and collaborative learning environment."
   ],
 },
 {
@@ -25,8 +25,8 @@ const experienceData = [
   role: "Software Engineer",
   duration: "August 2019 - June 2022",
   description: [
-  "Collaborated within an agile team to enhance software components for various post-trading activities.",
-  "Successfully migrated over 70% of the web application from GWT to Angular within a year. Resulted in improved access to post-trading activities."
+  "Collaborated with an agile team to enhance software components, improving the efficiency and functionality of various post-trading activities.",
+  "Successfully migrated over 70% of the web application from GWT to Angular within a year, resulting in improved access to post-trading activities."
   ],
   techStack: [
   { name: "Java", icon:
@@ -52,8 +52,8 @@ company: "Citi",
   role: "Software Engineer Intern",
   duration: "May 2018 - June 2018",
   description: [
-  "Developed a tool using Spring Boot microservices.",
-  "Simplified basic operations on the kdb database, significantly enhancing user accessibility."
+  "Developed a tool using Spring Boot microservices to simplify basic operations on the kdb database, addressing the complexity of queries in q language.",
+  "Streamlined database operations, significantly enhancing user accessibility."
   ],
   techStack: [
   { name: "Java", icon:

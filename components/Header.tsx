@@ -1,5 +1,6 @@
 "use client";
 import { Link } from "react-scroll";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -15,8 +16,17 @@ export default function Header() {
           <li><Link to="experience" smooth={true} duration={500} className="cursor-pointer">Experience</Link></li>
           <li><Link to="projects" smooth={true} duration={500} className="cursor-pointer">Projects</Link></li>
           <li><Link to="skills" smooth={true} duration={500} className="cursor-pointer">Skills</Link></li>
+          <li><a
+                  href="https://www.linkedin.com/in/manali-kale"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-800"
+          >
+            <FaLinkedin size={25}/>
+          </a></li>
         </ul>
       </nav>
+
     </header>
   );
 }
