@@ -53,7 +53,7 @@ company: "Citi",
   duration: "May 2018 - June 2018",
   description: [
   "Developed a tool using Spring Boot microservices to simplify basic operations on the kdb database, addressing the complexity of queries in q language.",
-  "Streamlined database operations, significantly enhancing user accessibility and encouraging greater usage"
+  "Streamlined database operations, significantly enhancing user accessibility and encouraging greater usage."
   ],
   techStack: [
   { name: "Java", icon:
