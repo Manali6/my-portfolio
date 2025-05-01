@@ -29,7 +29,7 @@ const projectData = [
     },
     {
     title: "Fitness Tracker",
-    description: "Developed a fitness tracker application with a user-friendly interface for goal tracking, workout and nutrition logging, and dynamic progress charts.",
+    description: "Developed a fitness tracker application with a user-friendly interface for goal tracking, workout and dynamic progress charts and integrated an external AI-powered tool for personalized nutrition recommendations.",
     youtubeLink: "ZwNteUswkT0",
     techStack: [
         { name: "React", icon:

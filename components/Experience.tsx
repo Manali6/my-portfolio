@@ -9,7 +9,7 @@ const experienceData = [
   role: "Software Engineer Intern",
   duration: " August 2024 - Present",
   description: [
-  "Currently, working on a software development project aimed at supporting charitable initiatives, leveraging my programming skills and fostering collaborative teamwork to drive impactful solutions."
+  "Developing a web platform that connects students with voluntary and temporary opportunities within various organizations, enhancing engagement and accessibility."
   ],
 },
 {
@@ -17,7 +17,7 @@ const experienceData = [
   role: "Course Facilitator",
   duration: "June 2023 - May 2024",
   description: [
-  "Facilitated a course for over 150 students, managing various responsibilities such as organizing course materials, grading assignments, and providing individual support through online office hours, while fostering an engaging and collaborative learning environment."
+  "Facilitated a course for over 150 students, managing various responsibilities such as organizing course materials, grading assignments, and providing individual support through online office hours."
   ],
 },
 {
@@ -25,8 +25,8 @@ const experienceData = [
   role: "Software Engineer",
   duration: "August 2019 - June 2022",
   description: [
-  "Collaborated with an agile team to enhance software components, improving the efficiency and functionality of various post-trading activities.",
-  "Successfully migrated over 70% of the web application from GWT to Angular within a year, resulting in improved access to post-trading activities."
+  "Optimized Java-based post-trade components for invoice reconciliation and brokerage fee management within an agile team, improving system performance and eliminating BlackDuck security vulnerabilities.",
+  "Migrated over 70% of the web application and developed and integrated a Python-based reporting utility with the UI to automate report generation."
   ],
   techStack: [
   { name: "Java", icon:
@@ -53,7 +53,7 @@ company: "Citi",
   duration: "May 2018 - June 2018",
   description: [
   "Developed a tool using Spring Boot microservices to simplify basic operations on the kdb database, addressing the complexity of queries in q language.",
-  "Streamlined database operations, significantly enhancing user accessibility."
+  "Streamlined database operations, significantly enhancing user accessibility and encouraging greater usage"
   ],
   techStack: [
   { name: "Java", icon:
