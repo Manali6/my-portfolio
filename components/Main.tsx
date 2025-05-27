@@ -73,7 +73,7 @@ return (
         {/* Image on the right */}
         <div className="w-1/2 flex justify-center">
             <Image
-                    src="/image1.png"
+                    src="/my-image.png"
                     alt="Image of Manali"
                     width={600}
                     height={600}
