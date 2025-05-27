@@ -105,7 +105,7 @@ return (
             height: bubble.size,
             left: bubble.x,
             top: bubble.y,
-            backgroundImage: "radial-gradient(circle, rgba(126,34,206,0.1) 0%, rgba(168,85,247,0.05git) 100%)",
+            backgroundImage: "radial-gradient(circle, rgba(126,34,206,0.1) 0%, rgba(168,85,247,0.05) 100%)",
 
 
 
