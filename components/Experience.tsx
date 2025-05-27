@@ -15,7 +15,7 @@ const experienceData = [
 {
   company: "University of Colorado Boulder",
   role: "Course Facilitator",
-  duration: "June 2023 - May 2024",
+  duration: "August 2023 - May 2024",
   description: [
   "Facilitated a course for over 150 students, managing various responsibilities such as organizing course materials, grading assignments, and providing individual support through online office hours."
   ],

@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 interface Bubble {
   id: number;
@@ -40,16 +42,46 @@ const Main = () => {
 
   return (
   <section id="home"
-          className="relative w-full h-screen flex items-center justify-center bg-gradient-to-b from-purple-500 to-indigo-600 overflow-hidden">
+          className="relative w-full h-screen flex items-center justify-center  overflow-hidden">
       <section
-              className="relative w-full h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-500 to-indigo-600 overflow-hidden text-center px-6">
-          <h1 className="text-white text-6xl md:text-7xl font-extrabold relative z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
-              Hi, I am Manali
-          </h1>
-          <p className="text-white text-2xl md:text-3xl mt-6 font-extrabold relative z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)] max-w-2xl">
-              As a Full Stack Developer, I bring ideas to life through interactive web experiences
-          </p>
+              className="relative w-full h-screen flex flex-row items-center justify-between  overflow-hidden px-6"
+      >
+          {/* Text on the left */}
+          <div className="flex flex-col justify-center items-start text-left w-1/2">
+              <h1 className="text-purple-600 text-6xl md:text-7xl font-extrabold ml-20 mb-10 z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
+                  Hi, I am Manali
+              </h1>
+              <h2 className="text-indigo-600 text-2xl md:text-3xl mt-4 font-semibold ml-20 z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
+                  <Typewriter
+                          words={[
+                  "Full Stack Developer",
+                  "Tech Enthusiast",
+                  "Creative Problem Solver",
+                  "Passionate Coder",
+                  "Turning Ideas into Interfaces",
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={80}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                  />
+              </h2>
+          </div>
+
+          {/* Image on the right */}
+          <div className="w-1/2 flex justify-center">
+              <Image
+                      src="/my-image.png"
+                      alt="Image of Manali"
+                      width={600}
+                      height={600}
+                      className="rounded-full border-4 border-white shadow-lg mt-10 mb-10 z-10"
+              />
+          </div>
       </section>
+
 
       {bubbles.map((bubble) => {
       const dx = mousePosition.x - bubble.x;
@@ -73,9 +105,11 @@ const Main = () => {
                 height: bubble.size,
                 left: bubble.x,
                 top: bubble.y,
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-                border: "1px solid rgba(255, 255, 255, 0.3)",
-              }}
+              backgroundImage: "radial-gradient(circle, rgba(126,34,206,0.1) 0%, rgba(168,85,247,0.05) 100%)",
+
+
+
+      }}
 
               animate={{
                 x: moveX,
