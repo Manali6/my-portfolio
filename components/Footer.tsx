@@ -6,12 +6,12 @@ const Footer = () => {
             <div className="container mx-auto text-center">
                 <div className="flex justify-center items-center space-x-4 ">
                     <a
-                            href="https://www.linkedin.com/in/manali-kale"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-gray-800 text-xl flex items-center"
+                        href="https://www.linkedin.com/in/manali-kale"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-800 text-xl flex items-center"
                     >
-                        <FaLinkedin size={30} className="mr-2"/>
+                        <FaLinkedin size={30} className="mr-2" />
                         {/* LinkedIn Icon */}
                         LinkedIn
                     </a>
