@@ -37,13 +37,13 @@ const Education = () => {
                             <div
                                 key={index}
                                 className={`relative flex justify-between items-center ${index % 2 === 0 ?
-                                        "flex-row" : "flex-row-reverse"
+                                    "flex-row" : "flex-row-reverse"
                                     }`}
                             >
                                 <FaBuilding className="w-6 h-6 absolute left-1/2 transform -translate-x-1/2 text-blue-800" />
 
                                 <div className={`w-full max-w-md p-6 bg-white shadow-lg rounded-lg ${index % 2 === 0 ?
-                                        "ml-16 text-left" : "mr-16 text-right"
+                                    "ml-16 text-left" : "mr-16 text-right"
                                     }`}>
                                     <h3 className="text-2xl font-semibold text-blue-800 text-center">{edu.institution}</h3>
                                     <p className="text-xl text-gray-500 text-center">{edu.degree}</p>

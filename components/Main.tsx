@@ -46,7 +46,7 @@ const Main = () => {
             <section
                 className="relative w-full h-screen flex flex-row items-center justify-between  overflow-hidden px-6"
             >
-                {/* Text on the left */}
+
                 <div className="flex flex-col justify-center items-start text-left w-1/2">
                     <h1 className="text-purple-600 text-6xl md:text-7xl font-extrabold ml-20 mb-10 z-10 drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
                         Hi, I am Manali
@@ -70,7 +70,6 @@ const Main = () => {
                     </h2>
                 </div>
 
-                {/* Image on the right */}
                 <div className="w-1/2 flex justify-center">
                     <Image
                         src="/my-image.png"

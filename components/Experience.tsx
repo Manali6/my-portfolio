@@ -7,15 +7,15 @@ const Experience = () => {
     {
       company: "Changing The Present",
       role: "Software Engineer Intern",
-      duration: " August 2024 - Present",
+      duration: " August 2024 - June 2025",
       description: [
-        "Developing a web platform that connects students with voluntary and temporary opportunities within various organizations, enhancing engagement and accessibility."
+        "Worked on a web platform connecting students with opportunities, implementing responsive layouts and performance optimizations, and collaborating with UX teams to ensure accessibility compliance."
       ],
     },
     {
       company: "University of Colorado Boulder",
       role: "Course Facilitator",
-      duration: "June 2023 - May 2024",
+      duration: "August 2023 - May 2024",
       description: [
         "Facilitated a course for over 150 students, managing various responsibilities such as organizing course materials, grading assignments, and providing individual support through online office hours."
       ],
@@ -25,7 +25,7 @@ const Experience = () => {
       role: "Software Engineer",
       duration: "August 2019 - June 2022",
       description: [
-        "Optimized Java-based post-trade components for invoice reconciliation and brokerage fee management within an agile team, improving system performance and eliminating BlackDuck security vulnerabilities.",
+        "Optimized Java-based post-trade components for invoice reconciliation and brokerage fee management within an agile team and resolved 100% of critical BlackDuck security vulnerabilities across modules.",
         "Migrated over 70% of the web application and developed and integrated a Python-based reporting utility with the UI to automate report generation."
       ],
       techStack: [
@@ -69,7 +69,7 @@ const Experience = () => {
       duration: "May 2018 - June 2018",
       description: [
         "Developed a tool using Spring Boot microservices to simplify basic operations on the kdb database, addressing the complexity of queries in q language.",
-        "Streamlined database operations, significantly enhancing user accessibility and encouraging greater usage."
+        "Streamlined database operations, significantly enhancing user accessibility and driving widespread adoption across 5+ internal teams.."
       ],
       techStack: [
         {
