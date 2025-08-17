@@ -6,26 +6,22 @@ const Education = () => {
             institution: "University of Colorado Boulder",
             degree: "Master of Science",
             major: "Computer Science",
-            duration: "2022 - 2024",
+            duration: "August 2022 - May 2024",
+            grade: "Grade: 3.9/4"
         },
         {
             institution: "Cummins College of Engineering",
             degree: "Bachelor of Engineering",
             major: "Computer Engineering",
-            duration: "2016 - 2019",
-        },
-        {
-            institution: "Government Polytechnic, Pune",
-            degree: "Diploma",
-            major: "Computer Engineering",
-            duration: "2013 - 2016",
+            duration: "June 2016 - May 2019",
+            grade: "Grade: 9.04/10"
         },
     ];
 
     return (
         <section id="education" className="py-20 bg-gray-100">
             <div className="container mx-auto px-6 text-center">
-                <h2 className="text-3xl font-bold text-gray-800 mb-12">Education</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-14">Education</h2>
                 <div className="relative">
                     {/* Vertical Timeline */}
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -45,10 +41,11 @@ const Education = () => {
                                 <div className={`w-full max-w-md p-6 bg-white shadow-lg rounded-lg ${index % 2 === 0 ?
                                     "ml-16 text-left" : "mr-16 text-right"
                                     }`}>
-                                    <h3 className="text-2xl font-semibold text-blue-800 text-center">{edu.institution}</h3>
-                                    <p className="text-xl text-gray-500 text-center">{edu.degree}</p>
-                                    <p className="text-xl text-gray-700 text-center">{edu.major}</p>
-                                    <p className="text-gray-500 text-center">{edu.duration}</p>
+                                    <h3 className="text-2xl font-semibold text-blue-800 text-center p-2">{edu.institution}</h3>
+                                    <p className="text-xl text-gray-800 text-center p-0.5">{edu.degree}</p>
+                                    <p className="text-xl text-gray-600 text-center p-0.5">{edu.major}</p>
+                                    <p className="text-gray-500 text-center p-0.5">{edu.duration}</p>
+                                    <p className="text-gray-500 text-center p-0.5">{edu.grade}</p>
                                 </div>
                             </div>
                         ))}

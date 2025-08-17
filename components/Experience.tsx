@@ -6,27 +6,31 @@ const Experience = () => {
   const experienceData = [
     {
       company: "Changing The Present",
-      role: "Software Engineer Intern",
+      role: "Software Engineer",
       duration: " August 2024 - June 2025",
       description: [
-        "Worked on a web platform connecting students with opportunities, implementing responsive layouts and performance optimizations, and collaborating with UX teams to ensure accessibility compliance."
+        "Developed and optimized a volunteer matching platform, improving page load performance by 30% and ensuring accessibility compliance.",
+        "Collaborated with UX teams to deliver responsive layouts, creating a more inclusive and user-centric interface prepared for rollout."
       ],
     },
+
     {
       company: "University of Colorado Boulder",
-      role: "Course Facilitator",
-      duration: "August 2023 - May 2024",
+      role: "Course Facilitator - Software Architecture for Big Data",
+      duration: " August 2023 - May 2024",
       description: [
         "Facilitated a course for over 150 students, managing various responsibilities such as organizing course materials, grading assignments, and providing individual support through online office hours."
       ],
     },
+
     {
       company: "Citi",
       role: "Software Engineer",
       duration: "August 2019 - June 2022",
       description: [
-        "Optimized Java-based post-trade components for invoice reconciliation and brokerage fee management within an agile team and resolved 100% of critical BlackDuck security vulnerabilities across modules.",
-        "Migrated over 70% of the web application and developed and integrated a Python-based reporting utility with the UI to automate report generation."
+        "Developed post-trade applications for invoice reconciliation and brokerage fee management, reducing operational errors by 40% and improving financial accuracy.",
+        "Migrated over 70% of the legacy application to Angular and built a Python-based reporting utility, enhancing UI responsiveness and automating report generation to cut manual effort by 80%.",
+        "Resolved 100% of critical BlackDuck security vulnerabilities across modules, strengthening compliance and system security."
       ],
       techStack: [
         {
@@ -63,45 +67,7 @@ const Experience = () => {
         },
       ],
     },
-    {
-      company: "Citi",
-      role: "Software Engineer Intern",
-      duration: "May 2018 - June 2018",
-      description: [
-        "Developed a tool using Spring Boot microservices to simplify basic operations on the kdb database, addressing the complexity of queries in q language.",
-        "Streamlined database operations, significantly enhancing user accessibility and driving widespread adoption across 5+ internal teams.."
-      ],
-      techStack: [
-        {
-          name: "Java", icon:
-            <FaJava size={30} />, style: "text-orange-400"
-        },
-        {
-          name: "Angular", icon:
-            <FaAngular size={30} />, style: "text-red-400"
-        },
-        {
-          name: "HTML", icon:
-            <FaHtml5 size={30} />, style: "text-orange-500"
-        },
-        {
-          name: "CSS", icon:
-            <FaCss3Alt size={30} />, style: "text-blue-600"
-        },
-        {
-          name: "SQL", icon:
-            <FaDatabase size={30} />, style: "text-yellow-500"
-        },
-        {
-          name: "Mockito", icon:
-            <SiSpring size={30} />, style: "text-green-500"
-        },
-        {
-          name: "Postman", icon:
-            <SiPostman size={30} />, style: "text-orange-400"
-        },
-      ],
-    },
+
   ];
 
   return (
@@ -112,7 +78,8 @@ const Experience = () => {
           {experienceData.map((exp, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className={`bg-white p-7 rounded-lg shadow-lg hover:shadow-xl transition-shadow ${index === experienceData.length - 1 ? 'sm:col-span-2 lg:col-span-2' : ''
+                }`}
             >
               <h3 className="text-2xl font-semibold text-blue-800 mb-2 text-center">{exp.company}</h3>
               <p className="text-xl text-gray-700 mb-2 text-center">{exp.role}</p>
